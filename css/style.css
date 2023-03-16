@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("../fonts/Roboto Mono.ttf");
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+body, html {
+  background-color: #0e1212;
+  font-family: "Roboto Mono";
+  font-size: 15px;
+  margin: 0px;
+  overflow: auto;
+  padding: 0px;
+}
+
+article {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+article > #quizSolve {
+  background-color: rgba(104, 42, 233, 0.25);
+  border-radius: 25px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 400px;
+  overflow-y: scroll;
+  padding: 10px;
+}
+article > #quizSolve > div {
+  align-items: center;
+  display: flex;
+  gap: 30px;
+}
+article > #quizSolve > div > span {
+  color: white;
+  min-width: 250px;
+}
+article > #quizSolve > div > i {
+  border-radius: 25px;
+  color: white;
+  padding: 10px;
+  transition: all 0.25s ease-in-out;
+}
+article > span#quizSolveResult {
+  color: white;
+  display: none;
+}
+article > button#quizSolveCheck {
+  display: none;
+}
+article > button#quizAddStart {
+  display: none;
+}
+
+button {
+  background-color: #682ae9;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  font-family: "Roboto Mono";
+  padding: 10px;
+  transition: all 0.25s ease-in-out;
+}
+button:hover {
+  background-color: white;
+  color: #682ae9;
+}
+
+input {
+  background-color: transparent;
+  border: 1px solid #682ae9;
+  border-radius: 25px;
+  color: white;
+  font-family: "Roboto Mono";
+  outline: none;
+  padding: 10px;
+  transition: all 0.25s ease-in-out;
+}
+input::-moz-placeholder {
+  color: white;
+}
+input::placeholder {
+  color: white;
+}
+input:focus {
+  border: 1px solid white;
+}/*# sourceMappingURL=style.css.map */
