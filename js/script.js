@@ -27,7 +27,7 @@ quizAdd.addEventListener("submit", (event) => {
 
     span.innerHTML = `"${quizAddQuestion.value}"`;
     input.id = quizAddQuestion.value;
-    input.placeholder = `OdpowiedŸ...`;
+    input.placeholder = `Odpowiedï¿½...`;
     input.autocomplete = `off`;
     button.id = quizID;
     button.innerHTML = `<i class="fa-solid fa-eye"></i>`;
@@ -86,5 +86,5 @@ function checkAnswers() {
 
     quizSolveCheck.style.display = `none`;
     quizSolveResult.style.display = `block`;
-    quizSolveResult.innerHTML = `Wynik: ${quizPoints}/${quizList.length} punktów`;
+    quizSolveResult.innerHTML = `Wynik: ${quizPoints}/${quizList.length} punktÃ³w`;
 }
