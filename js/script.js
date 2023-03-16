@@ -27,7 +27,7 @@ quizAdd.addEventListener("submit", (event) => {
 
     span.innerHTML = `"${quizAddQuestion.value}"`;
     input.id = quizAddQuestion.value;
-    input.placeholder = `Odpowied�...`;
+    input.placeholder = `Odpowiedź...`;
     input.autocomplete = `off`;
     button.id = quizID;
     button.innerHTML = `<i class="fa-solid fa-eye"></i>`;
